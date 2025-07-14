@@ -69,3 +69,15 @@ Client ----Req-----------> Server
 Req = send request
 Middleware = check the auth before sending result
 Res = Get the result
+
+# Rate Limiting 
+Is a way to control how often someone can do somthing on the website or app like how many times they can refresh a page, make a request to an API, or try to log in
+
+like only 100 request per user every 15 minutes
+
+client ---> Rate Limiter ---> API
+
+Helps: prevent abuse, protects servers getting overwhelmed 
+Upstash.js is used from rate limi
+
+429 (status code) = too many request 
